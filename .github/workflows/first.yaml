@@ -1,0 +1,15 @@
+name: shell commands
+- push   # could be any one of these
+jobs:
+on:
+
+  run-shell-commands:          #Workflow Name, Workflow always runs in parallel 
+    runs-on: ubuntu-latest       #Will automatically create a VM(ec2)
+    steps:
+       - name: echo string        #Name/title of what you want to do
+         run: echo "Hello"           #Actual command starts with run
+       - name: Multi line string
+         run: |                            #Pipe command, to signify multiple commands to run
+           pwd
+           node -v
+           ls -a
