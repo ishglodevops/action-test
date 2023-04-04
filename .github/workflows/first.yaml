@@ -18,4 +18,9 @@ jobs:
            import platform
            print(platform.processor())
          shell: python
- 
+  run-windows-commands:    ##Another job that will run in parallel
+    runs-on: windows-latest
+    steps:
+       - name: Directory
+         run: pwd
+         shell: bash
