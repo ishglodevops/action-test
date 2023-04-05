@@ -1,4 +1,4 @@
-name: shell commands
+gitname: shell commands
 
 on:
  - push
