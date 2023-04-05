@@ -1,5 +1,3 @@
-gitname: shell commands
-
 on:
  - push
 jobs:
