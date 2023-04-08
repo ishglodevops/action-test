@@ -10,3 +10,4 @@ jobs:
          run: |
            pwd
            ls -a
+           df -h
