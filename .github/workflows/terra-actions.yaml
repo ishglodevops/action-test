@@ -11,6 +11,10 @@ jobs:
     steps:
        - name: Checkout
          uses: actions/checkout@v1
+       - name: Add nodejs to prevent error
+         uses: actions/setup-node@v3
+         with:
+           node-version: '16'
        - name: Setup Terraform
          uses: hashicorp/setup-terraform@v2
          with:
